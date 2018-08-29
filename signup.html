@@ -8,7 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-	<div class="vic">
+	<div class="vic" >
 		<!-- Centered Pills -->
 		<ul class="nav nav-pills nav-justified">
 		  <li class="active"><a data-toggle="tab" href="#signup">SIGNUP</a></li>
@@ -19,12 +19,23 @@
 			
 			<div id="signup" class="tab-pane fade in active">
 				<form action="/" method="post">
-					<input type="text" name="fname" placeholder="First name*">
-					<input type="text" name="lname" placeholder="Lastname*">
-					<input type="email" name="mail" placeholder="example@gmail.com*">
-					<input type="password" name="pass" placeholder="****">
-					<input type="password" name="pass2" placeholder="****">
-					<input type="button" name="submit" value="REGISTER">
+
+					<div class="row">
+						<div class="col-sm-3"><input type="text" name="fname" placeholder="First name*" style="margin-top: 20px"></div>
+						<div class="col-sm-3"><input type="text" name="lname" placeholder="Lastname*" style="margin-top: 20px"></div>
+					</div>
+					<div class="row">
+						<div class="col-sm-6" id="mail"><input type="email" name="mail" placeholder="example@gmail.com*" style="width: 94%;margin-top: 20px"></div>
+					</div>
+					<div class="row">
+						<div class="col-sm-3"><input type="password" name="pass" placeholder="password" style="margin-top: 20px" ;margin-left: 20px></div>
+						<div class="col-sm-3"><input type="password" name="pass2" placeholder="password" style="margin-top: 20px" ></div>
+					</div>
+					<div class="row">
+						<div class="col-sm-6"><input type="button" name="submit" value="REGISTER" style="margin: 20px ; width: 95%"></div>
+					</div>
+					
+					
 				</form>
 				
 			</div>
@@ -32,7 +43,7 @@
 			<div id="login" class="tab-pane fade">
 				<form action="/" method="post">
 					<input type="email" name="mail" placeholder="example@gmail.com*">
-					<input type="password" name="pass" placeholder="****">
+					<input type="password" name="pass" placeholder="password">
 					<a href="#">forgot password</a>
 					<input type="button" name="submit" value="LOGIN">
 				</form>
