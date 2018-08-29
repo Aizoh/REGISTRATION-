@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SIGNUP/LOGIN</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="vic">
+		<!-- Centered Pills -->
+		<ul class="nav nav-pills nav-justified">
+		  <li class="active"><a data-toggle="tab" href="#signup">SIGNUP</a></li>
+		  <li><a  data-toggle="tab" href="#login">lOGIN</a></li>
+		</ul>
+		<!--defining the 2 tabs content-->
+		<div class="tab-content">
+			
+			<div id="signup" class="tab-pane fade in active">
+				<form action="/" method="post">
+					<input type="text" name="fname" placeholder="First name*">
+					<input type="text" name="lname" placeholder="Lastname*">
+					<input type="email" name="mail" placeholder="example@gmail.com*">
+					<input type="password" name="pass" placeholder="****">
+					<input type="password" name="pass2" placeholder="****">
+					<input type="button" name="submit" value="REGISTER">
+				</form>
+				
+			</div>
+
+			<div id="login" class="tab-pane fade">
+				<form action="/" method="post">
+					<input type="email" name="mail" placeholder="example@gmail.com*">
+					<input type="password" name="pass" placeholder="****">
+					<a href="#">forgot password</a>
+					<input type="button" name="submit" value="LOGIN">
+				</form>
+				
+			</div>
+		</div>
+	</div>
+
+
+
+
+</body>
+</html>
