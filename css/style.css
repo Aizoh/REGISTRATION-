@@ -3,5 +3,12 @@
 	margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
-    background: url("/img/background.jpg");
+    
+   
+}
+.tab-signup{
+    background-color: rebeccapurple;
+}
+.tab-login{
+    background-color: rebeccapurple;
 }
